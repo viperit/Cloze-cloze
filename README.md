@@ -1,6 +1,6 @@
 # Cloze-cloze
 2018 下半学期、nlp作业
-## 任务描述:
+## task description:
 >给定训练集，完成dev集的选词填空
 
 >训练集example:
@@ -8,7 +8,7 @@
 
 >dev集example:
 >>![](dev-example.jpg)
-## 数据集描述:
+## data set description:
 
 Microsoft提出的特殊的数据集，用于证实n-gram模型的不足之处
   
