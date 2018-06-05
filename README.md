@@ -37,3 +37,24 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
 * gensim
 
       conda install gensim
+## Dir
+```
+./Training_Data.zip
+./development_set_answers.txt
+./dev-sentences.txt
+```    
+  
+## Usage
+step1. unzip Training_Data.zip
+step2. run prepare-dataset.ipynb
+step3. run Deal.ipynb
+After step1-3, the dir should be:
+```
+./Training_Data.zip
+./development_set_answers.txt
+./dev-sentences.txt
+./Training_Data/
+./train-sentences.txt
+```  
+  
+
