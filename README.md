@@ -34,6 +34,10 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
     * predict_output_word( CBOW训练词向量得出的预测概率 )
           
           parameters: hs=1,window=10,size=300,min_count=5,workers =7
+    * 相似度度量
+      候选答案和句子中其他词的相似度之和，选取最大的那个
+          parameters: hs=1,window=10,size=300,min_count=5,workers =7
+          
 
 ## Dependencies
 * anaconda3
@@ -69,4 +73,5 @@ After step1-3, the dir should be:
 |n-gram(频次) | 0.5 |0.32083333333333336, 0.3875, 0.3541666666666667, 0.2875|
 |gensim score | - |0.4625|
 |gensim predict_output_word | - |0.5458333333333333|
+|相似度度量|-|0.44583333333333336|
 
