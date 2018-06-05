@@ -31,5 +31,5 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
 * anaconda3
 * jupyter notebook
 * gensim
-    
+
     conda install gensim
