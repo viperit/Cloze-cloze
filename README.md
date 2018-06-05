@@ -24,14 +24,16 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
       1. 句子概率
       2. 句子中n元组出现的次数乘积(频率)
 2. gensim:
-    * word2vec score, parameters: hs=1,negative=0,sample=0.001,window=10,size=300,min_count=10,workers = 7
-    * predict_output_word, parameters: hs=1,window=10,size=300,min_count=5,workers =7
+    * word2vec score
+    
+          parameters: hs=1,negative=0,sample=0.001,window=10,size=300,min_count=10,workers = 7
+    * predict_output_word
+          
+          parameters: hs=1,window=10,size=300,min_count=5,workers =7
 
 ## Dependencies
 * anaconda3
 * jupyter notebook
 * gensim
-
-
 
       conda install gensim
