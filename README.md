@@ -84,7 +84,7 @@ After step1-4, the dir should be:
 ./development_set.txt
 ./test_set.txt
 
-./result.txt
+./result.txt (final result.txt)
 ./dev-sentences.txt (put answer into dev sentences for n-gram model)
 ./Training_Data/ (unzip Training_Data.zip)
 ./train-sentences.txt (train sentences after clean)
