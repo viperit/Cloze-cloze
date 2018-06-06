@@ -1,12 +1,12 @@
 # Cloze-cloze
 2018 下半学期、nlp作业
-## task description:
->给定训练集，完成dev集的选词填空
+## task description: 选词填空
+>给定训练集，在dev set 上验证准确率，对test set选词填空
 
->训练集example:
+>train set example:
 >>![](train-example.jpg)
 
->dev集example:
+>dev set( as same as test set) example:
 >>![](dev-example.jpg)
 
 ## Note:
@@ -18,6 +18,10 @@ Lstm-for-cloze.ipynb is incomplete! Still waiting for further work.
 Microsoft提出的特殊的数据集，该数据集被用于证实n-gram模型的不足之处
   
 reference: [A Challenge Set for Advancing Language Modeling](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/holmes.pdf  )
+
+raw train set: 522 .txt, ~=240MB
+dev: 240
+test: 800
 
 ## methods:
 
@@ -31,14 +35,14 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
 2. gensim:
     * word2vec score (calculates the loss based on the context words present in the sentence,refer:[How-does-Gensim-Word2vec-calculate-the-probability-of-text-using-a-model-score](https://www.quora.com/How-does-Gensim-Word2vec-calculate-the-probability-of-text-using-a-model-score))
     
-          parameters: hs=1,sample=0.001,window=10,size=300,min_count=10,workers = 7
+          parameters: hs = 1,sample = 0.001,window = 10,size = 300,min_count = 10,workers = 7
     * predict_output_word( CBOW训练词向量得出的预测概率 )
           
-          parameters: hs=1,window=10,size=300,min_count=5,workers =7
+          parameters: hs = 1,window=10,size = 300,min_count = 5,workers = 7
     * 相似度度量
       候选答案和句子中其他词的相似度之和，选取最大的那个
           
-          parameters: hs=1,window=10,size=300,min_count=5,workers =7
+          parameters: hs = 1,window=10,size = 300,min_count = 5,workers = 7
           
 
 ## Dependencies
