@@ -49,7 +49,8 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
       conda install gensim
 * nltk
 
-      conda install nltk and use nltk.download() to download clause data
+      1. conda install nltk
+      2. nltk.download() to download clause data
  
 ## Dir
 ```
