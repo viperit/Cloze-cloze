@@ -2,6 +2,7 @@
 2018 下半学期、nlp作业
 ## task description: 选词填空
 >给定训练集，在dev set 上验证准确率，对test set选词填空
+
 >选择了dev集上准确率最高的 gensim predict_output_word 对test选词填空，生成答案列表
 
 >train set example:
@@ -62,6 +63,7 @@ test: 800
 ./Training_Data.zip
 ./development_set_answers.txt
 ./development_set.txt
+./test_set.txt
 ```    
   
 ## Usage
@@ -73,11 +75,16 @@ step2. run prepare-dataset.ipynb
 
 step3. run Deal.ipynb
 
-After step1-3, the dir should be:
+step4. run result.ipynb
+
+After step1-4, the dir should be:
 ```
 ./Training_Data.zip
 ./development_set_answers.txt
 ./development_set.txt
+./test_set.txt
+
+./result.txt
 ./dev-sentences.txt (put answer into dev sentences for n-gram model)
 ./Training_Data/ (unzip Training_Data.zip)
 ./train-sentences.txt (train sentences after clean)
