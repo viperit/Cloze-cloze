@@ -12,6 +12,7 @@
 ## Note:
 Lstm-for-cloze.ipynb is incomplete! Still waiting for further work.
 
+
 ## data set description:
 
 Microsoft提出的特殊的数据集，该数据集被用于证实n-gram模型的不足之处
@@ -36,6 +37,7 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
           parameters: hs=1,window=10,size=300,min_count=5,workers =7
     * 相似度度量
       候选答案和句子中其他词的相似度之和，选取最大的那个
+          
           parameters: hs=1,window=10,size=300,min_count=5,workers =7
           
 
@@ -45,17 +47,23 @@ reference: [A Challenge Set for Advancing Language Modeling](https://www.microso
 * gensim
 
       conda install gensim
+* nltk
+
+      conda install nltk and use nltk.download() to download clause data
+ 
 ## Dir
 ```
 ./Training_Data.zip
 ./development_set_answers.txt
-./dev-sentences.txt
+./development_set.txt
 ```    
   
 ## Usage
 step1. unzip Training_Data.zip
 
 step2. run prepare-dataset.ipynb
+    
+    After clean, train set have 737385 sentences, 88726 unique words.
 
 step3. run Deal.ipynb
 
@@ -63,9 +71,10 @@ After step1-3, the dir should be:
 ```
 ./Training_Data.zip
 ./development_set_answers.txt
-./dev-sentences.txt
-./Training_Data/
-./train-sentences.txt
+./development_set.txt
+./dev-sentences.txt (put answer into dev sentences)
+./Training_Data/ (unzip Training_Data.zip)
+./train-sentences.txt (train sentences after clean)
 ```  
 ## Accuracy
 | model | smooth num | accuracy(n=2,3,4,5 for n-gram) |
