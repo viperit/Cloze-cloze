@@ -73,7 +73,7 @@ After step1-3, the dir should be:
 ./Training_Data.zip
 ./development_set_answers.txt
 ./development_set.txt
-./dev-sentences.txt (put answer into dev sentences)
+./dev-sentences.txt (put answer into dev sentences for n-gram model)
 ./Training_Data/ (unzip Training_Data.zip)
 ./train-sentences.txt (train sentences after clean)
 ```  
